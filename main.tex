@@ -2,12 +2,20 @@
 % The documentclass command is required in LaTeX
 
 
-% I CAN TYPE CHANGES WITHOUT A MOUSE  
+% I CAN TYPE CHANGES WITHOUT A MOUSE
 % I am making changes to the LaTeX code for this project
 % I got the created project from GitHub
 % I can escape editing with OPTION + TAB
+
+
+% Hi, I am a student who cannot use a mouse.
+% I am editing LaTeX in a separate editor on my Desktop
+% I am not using Overleaf.
+
+% I will make these changes, and I will push to
+% GitHub using GitHub Desktop.
             
-% Packages are our toolboxes and are defined at the 
+% Packages are our toolboxes and are defined at the
 % top of our sourcecode in this preamble.
 \usepackage[utf8]{inputenc}
 
@@ -25,8 +33,8 @@
 \usepackage{apacite} % APA citation style bibliOgraphy
 % preamble global changes
 %make a change
-    
-    
+
+
 \usepackage{microtype}
 % \usepackage[a4paper, total={6.5in, 9in}]{geometry} % control text space
 \usepackage{helvet}
@@ -54,16 +62,16 @@
 \subsection{I can add subsections}
 \subsubsection{And sub sub section, etc.}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus 
-urna, finibus at augue luctus, mattis mollis tellus. Aliquam consequat 
-accumsan magna sit amet vestibulum. Cum sociis natoque penatibus et 
-magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut 
-pellentesque mauris. Nulla ac dolor at leo hendrerit interdum. Etiam 
-vulputate posuere nisi in tincidunt. Sed non scelerisque purus. Phasellus 
-efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui 
-lacus, in semper nulla volutpat eget. Pellentesque habitant morbi 
-tristique senectus et netus et malesuada fames ac turpis egestas. 
-Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus
+urna, finibus at augue luctus, mattis mollis tellus. Aliquam consequat
+accumsan magna sit amet vestibulum. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut
+pellentesque mauris. Nulla ac dolor at leo hendrerit interdum. Etiam
+vulputate posuere nisi in tincidunt. Sed non scelerisque purus. Phasellus
+efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui
+lacus, in semper nulla volutpat eget. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas.
+Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna.
 Vivamus in accumsan erat.
 
 \section{Comments and Formatting}
@@ -97,10 +105,10 @@ Enumerated (Numbered) Lists
 Don't forget to check out the Error Log when you recompile.  It will give suggestions about debugging and let you know what lines in your source code have errors.  Google, Stackoverflow, and your friendly Data Analysis Specialist at the Library (that's me) are always happy to help.
 
 
-\section{Math}  
+\section{Math}
 There is great Power in the handling of symbols and formulas for LaTeX.  We can display mathematical expressions and symbols "inline" in the text like this $\frac{1}{2}$ with \$ signs, or with square brackets.
 
-We need to usepackage amsmath for flexibility in displayed (not in-line) equations and how they are aligned.  
+We need to usepackage amsmath for flexibility in displayed (not in-line) equations and how they are aligned.
 
 \LaTeX has symbols for operators $\times \dot \div$, Greek letters $\alpha \beta \Delta \Gamma$, and arrows $\Rightarrow$.
 \href{https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols}{List of Greek Letters and Math Symbols}
@@ -108,7 +116,7 @@ We need to usepackage amsmath for flexibility in displayed (not in-line) equatio
 
 \subsection{Inline vs. display math mode}
 The mass-energy equivalence is described by the famous equation \[ E=mc^2 \]
-discovered in 1905 by Albert Einstein. 
+discovered in 1905 by Albert Einstein.
 In natural units ($c = 1$), the formula expresses the identity
 \begin{equation}
 E=m
@@ -124,10 +132,10 @@ A & = \frac{\pi r^2}{2} \\
 
 \subsection{Writing a single equation}
 We can use the command begin with argument equation from the amsmath package.  Notice, if we add an asterisk to the argument, the equation is not numbered.
-\begin{equation} 
+\begin{equation}
 e^{\pi i} + 1 = 0
 \end{equation}
-The above equation is numbered. 
+The above equation is numbered.
 \begin{equation*}
 e^{\pi i} + 1 = 0
 \end{equation*}
@@ -149,8 +157,8 @@ p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3 \\  %the two slashes break line
 
 \subsection{Aligning several equations}
 We can use align from amsmath to align systems of equations at their equals sign.  Double slashes denote a line break.
-\begin{align*} 
-2x - 5y &=  8 \\ 
+\begin{align*}
+2x - 5y &=  8 \\
 3x + 9y &=  -12
 \end{align*}
 
@@ -165,7 +173,7 @@ a & b & c
 \end{equation}
 
 \subsection{Typing superscripts and subscripts}
-Underscores and carets are used.  
+Underscores and carets are used.
 Superscripts and subscripts can also be used to assign limits next to integrals as in the example below.
 \begin{equation*}
     \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
@@ -180,7 +188,7 @@ Curly brackets are needed if more than one character is in sub or superscripts.
 \[ (a^n)^{r+s} = a^{nr+ns}  \]
 
 \subsubsection{Operators using subscripts}
-\[ \sum_{i=1}^{\infty} \frac{1}{n^s} 
+\[ \sum_{i=1}^{\infty} \frac{1}{n^s}
 = \prod_p \frac{1}{1 - p^{-s}} \]
 
 \subsection{Parentheses and Brackets}
@@ -189,8 +197,8 @@ Notice the size of brackets scales automatically.  We can define left and right 
 \[ F = G \left( \frac{m_1 m_2}{r^2} \right) \]
 
 \subsection{Typing fractions}
-Fractions can be used alongside the text, for 
-example \( \frac{1}{2} \), and in a mathematical 
+Fractions can be used alongside the text, for
+example \( \frac{1}{2} \), and in a mathematical
 display style like the one below:
 
 \[\frac{1}{2}\]
@@ -233,7 +241,7 @@ Writing chemical formulas with package chemfig
 
 
 \section{Graphics}
-We need to use the package \textit{graphicx} to manage packages.  Supported formats include eps, pdf, jpg, and png.  
+We need to use the package \textit{graphicx} to manage packages.  Supported formats include eps, pdf, jpg, and png.
 
 Create an images folder and upload the image files to it.
 
@@ -311,16 +319,16 @@ Example 8. Floating pictures. Text wrapping the figure.  r is for right, use l f
 
 \vspace{1.2cm}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus 
-urna, finibus at augue luctus, mattis mollis tellus. Aliquam consequat 
-accumsan magna sit amet vestibulum. Cum sociis natoque penatibus et 
-magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut 
-pellentesque mauris. Nulla ac dolor at leo hendrerit interdum. Etiam 
-vulputate posuere nisi in tincidunt. Sed non scelerisque purus. Phasellus 
-efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui 
-lacus, in semper nulla volutpat eget. Pellentesque habitant morbi 
-tristique senectus et netus et malesuada fames ac turpis egestas. 
-Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus
+urna, finibus at augue luctus, mattis mollis tellus. Aliquam consequat
+accumsan magna sit amet vestibulum. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut
+pellentesque mauris. Nulla ac dolor at leo hendrerit interdum. Etiam
+vulputate posuere nisi in tincidunt. Sed non scelerisque purus. Phasellus
+efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui
+lacus, in semper nulla volutpat eget. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas.
+Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna.
 Vivamus in accumsan erat.
 
 \newpage
@@ -341,7 +349,7 @@ Example 9. Captioning
 
 Example 10. Caption next to the figure using the sidecap argument SCfigure
 \begin{SCfigure}[0.5][h]
-\caption{Using again the photo of the library. 
+\caption{Using again the photo of the library.
          This caption will be on the right}
 \includegraphics[width=0.6\textwidth]{library}
 \end{SCfigure}
@@ -381,23 +389,23 @@ You can use the tabular argument to make tables in \LaTeX.  Use | and hline to a
 
 \begin{center}
 \begin{tabular}{ c | c  c }
- cell1 & cell2 & cell3 \\ 
+ cell1 & cell2 & cell3 \\
  \hline
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9    
+ cell4 & cell5 & cell6 \\
+ cell7 & cell8 & cell9
 \end{tabular}
 \end{center}
 
 
 \section{Bibliographies}
-You can download BibTex format from Zotero, Endnote, Brandeis Library OneSearch, and other citation management tools.  To add APA citations, we use the apacite package and cite command with the reference as the argument.  The reference label is the first part of the .bib entry for your resource.  For example,the Intro to LaTeX research guide \cite{ClairePontbriand2019ItL} lists resources. 
+You can download BibTex format from Zotero, Endnote, Brandeis Library OneSearch, and other citation management tools.  To add APA citations, we use the apacite package and cite command with the reference as the argument.  The reference label is the first part of the .bib entry for your resource.  For example,the Intro to LaTeX research guide \cite{ClairePontbriand2019ItL} lists resources.
 
-We use the bibliography command where we want the references listed.  
+We use the bibliography command where we want the references listed.
 \bibliographystyle{apacite}
 \bibliography{bibtex.bib}
 
 \section{The Preamble}
-Add the package microtype in your preamble. These changes are subtle modifications on the inter word spacing and kerning. It tends to make your document look just a little bit better. 
+Add the package microtype in your preamble. These changes are subtle modifications on the inter word spacing and kerning. It tends to make your document look just a little bit better.
 
 We can use the geometry package to manage margins.
 
@@ -423,4 +431,3 @@ This is Helvetica	(helvet	phv)
 
 % END DOCUMENT IS REQUIRED COMMAND
 \end{document}
-                    
